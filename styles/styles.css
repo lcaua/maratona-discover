@@ -73,12 +73,13 @@ button {
     padding: 0;
 
     border-radius: 0.25rem;
-
+    opacity:0.8;
     cursor: pointer;
 }
 
 button:hover {
-    background: #ff007f;
+    background: #ffa0bd;
+    opacity:1;
 
 }
 
@@ -102,6 +103,11 @@ button:hover {
     border-bottom: 4px solid #ffa0bd;
 }
 
+.button.new:active {
+    position: relative;
+    top: 4px;
+}
+
 .button.cancel {
     color: var(--red);
     border: 2px var(--red) solid;
@@ -116,10 +122,10 @@ button:hover {
     opacity: 0.6;
 }
 
-#img-remove {
+#remove {
     cursor: pointer;
+    
 }
-
 
 
 .button.cancel:hover {
@@ -128,9 +134,25 @@ button:hover {
 
 /* Header ===================== */
 header {
-    background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
+    background-size: 300% 300%;
     padding: 2rem 0 10rem;
     text-align: center;
+    animation: colors 10s ease infinite;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 #logo {
@@ -195,6 +217,8 @@ header {
     color:#000;
 }
 
+
+
 table thead tr th:first-child, 
 table tbody tr td:first-child
 {
@@ -224,7 +248,21 @@ table tbody tr:hover {
 table tbody td {
     background:  #fff;
     padding: 1rem 2rem;
+    animation:fadeIn 0.7s;
 }
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
 
 td.description {
     color: var(--dark-blue);
@@ -267,6 +305,7 @@ td.expense {
     padding: 2.4rem;
     position: relative;
     z-index: 1;
+    border-radius:0.28rem;
 }
 
 @keyframes fadeIn {
