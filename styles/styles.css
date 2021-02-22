@@ -127,6 +127,10 @@ button:hover {
     
 }
 
+#download {
+    cursor: pointer;
+}
+
 
 .button.cancel:hover {
     opacity: 1;
@@ -138,7 +142,7 @@ header {
     background-size: 300% 300%;
     padding: 2rem 0 10rem;
     text-align: center;
-    animation: colors 9s ease infinite;
+    animation: colors 4s ease infinite;
 }
 
 @keyframes colors {
@@ -237,31 +241,12 @@ table thead th {
     text-align: left;
 }
 
-table tbody tr {
-    opacity: 0.6
-}
-
-table tbody tr:hover {
-    opacity: 1
-}
 
 table tbody td {
     background:  #fff;
     padding: 1rem 2rem;
-    animation:fadeIn 0.7s;
+    
 }
-
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
 
 
 td.description {
@@ -274,6 +259,10 @@ td.income {
 
 td.expense {
     color: #e92929;
+}
+
+table thead th.dow {
+   padding-top:20px;
 }
 
 /* Modal ===================== */

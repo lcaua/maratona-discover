@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#principal {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.box {
+    background-color: #ffa0bd;
+    height: 100vh;
+    
+}
+
+.box.b {
+    background-color: #2c2c2c;
+    padding-top: 16rem;
+    text-align: center;
+}
+
+#news {
+    box-shadow: 4px 5px 4px#363f5f;
+    margin-top: 7rem;
+    border-radius: 0.55rem;
+    margin-left: 5rem;
+    background-color: #2c2c2c;
+    height: 20rem;
+    width: 25rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #fff;
+    padding-top:1rem;
+}
+
+ul ol {
+    font-size: 17px;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+
